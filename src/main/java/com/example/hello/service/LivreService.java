@@ -1,7 +1,6 @@
 package com.example.hello.service;
 
 import com.example.hello.model.Livre;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
@@ -22,7 +21,7 @@ public class LivreService {
         System.out.println("Date de publication du livre : ");
         livre.setDatePublication(sc.nextLine());
 
-        System.out.println(livre.toString());
+        System.out.println(livre);
     }
 
     public Livre getLivre(){
