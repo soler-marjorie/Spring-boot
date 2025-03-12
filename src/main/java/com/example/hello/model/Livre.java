@@ -6,15 +6,17 @@ public class Livre {
     private String titre;
     private String description;
     private String datePublication;
+    private String genre;
 
 
     //CONSTRUCTORS
     public Livre() {}
 
-    public Livre(String titre, String description, String datePublication) {
+    public Livre(String titre, String description, String datePublication, String genre) {
         this.titre = titre;
         this.description = description;
         this.datePublication = datePublication;
+        this.genre = genre;
     }
 
     public String getTitre() {
@@ -41,14 +43,22 @@ public class Livre {
         this.datePublication = datePublication;
     }
 
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+
     @Override
     public String toString() {
         return "Livre{" +
                 "titre='" + titre + '\'' +
                 ", description='" + description + '\'' +
                 ", datePublication='" + datePublication + '\'' +
+                ", genre='" + genre + '\'' +
                 '}';
     }
-
-
 }
